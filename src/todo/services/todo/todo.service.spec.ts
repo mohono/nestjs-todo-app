@@ -11,6 +11,7 @@ describe('TodoService', () => {
   let repository: MockType<Repository<Todo>>;
   
   beforeEach(async () => {
+    console.log("test1")
     const module: TestingModule = await Test.createTestingModule({
       providers: [
         TodoService,
