@@ -10,7 +10,6 @@ import { TodoMapperService } from '../todo-mapper/todo-mapper.service';
 export class TodoService {
 
   public constructor(
-    console.log("test2")
     @InjectRepository(Todo) private readonly todoRepository: Repository<Todo>,
     private readonly todoMapper: TodoMapperService
   ) {}
