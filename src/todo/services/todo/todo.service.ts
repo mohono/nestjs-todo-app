@@ -8,8 +8,12 @@ import { TodoMapperService } from '../todo-mapper/todo-mapper.service';
 
 @Injectable()
 export class TodoService {
+  public constructor1(
+    @InjectRepository(Todo) private readonly todoRepository: Repository<Todo>,
+    private readonly todoMapper: TodoMapperService
+  ) {}
 
-  public constructor(
+  public constructor2(
     @InjectRepository(Todo) private readonly todoRepository: Repository<Todo>,
     private readonly todoMapper: TodoMapperService
   ) {}
